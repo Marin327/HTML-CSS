@@ -1,0 +1,32 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+body {
+  font-family: Montserrat, sans-serif;
+  padding: 16px;
+}
+
+th {
+  background-color: lightblue;
+}
+
+th,
+td {
+  width: 144px;
+  height: 32px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+i{
+  padding-right: 5.40px;
+}
+
+a.green{
+  background-color: green ;
+}
+•	The anchor with class="green"> (you can select them like that: .green)
+o	Background color: green
+•	The anchor with class="orange"> (you can select them like that: .orange)
+o	Background color: orange
+
+}

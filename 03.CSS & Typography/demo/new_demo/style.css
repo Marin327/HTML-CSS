@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "SmoochSans";
+  src: url(SmoochSans-VariableFont_wght.ttf);
+}
+
+h1 {
+  /* color: red; */
+  font-family: "SmoochSans";
+}
+
+p {
+  font-family: Roboto;
+}
+
+#p1 {
+  color: red;
+}
+
+#p2 {
+  color: green;
+}
+
+#p3 {
+  color: blue;
+}
+
+section {
+  padding: 20px 20px;
+  font-size: 1.2em;
+}
+
+#s1 {
+  background-color: #aaa;
+}
+
+#s2 {
+  background-color: #999;
+}
+
+#s3 {
+  background-color: #777;
+}
+
+.demo {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-indent: 2em;
+  text-align: justify;
+
+  border: 1px solid black;
+
+  /* overflow on 3th row */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  /* overflow on 3th row ---*/
+
+
+  cursor: not-allowed;
+}
+
+a {
+  text-decoration: none;
+}
