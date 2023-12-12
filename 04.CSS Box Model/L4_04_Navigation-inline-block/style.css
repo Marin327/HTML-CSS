@@ -1,0 +1,28 @@
+html{
+    font-family: Helvetica, sans-serif;
+}
+
+header *{
+    display: inline-block;
+}
+
+header{
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    padding: 0 10px ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: lightgreen;
+}
+
+article h1{
+    font-family: Merriweather, serif;;
+}
