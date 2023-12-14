@@ -1,0 +1,17 @@
+.mainTable .frozen {
+  background-color: #ebbc00;
+  position: sticky;
+  right: 0;
+}
+
+.subTable .frozen {
+  background-color: #ff8000;
+  position: sticky;
+  right: 0;
+}
+
+/* Solves problem with sticki */
+/* Sticki doesn't work if ovrflow: hidden */
+.sub-container {
+  overflow: unset;
+}

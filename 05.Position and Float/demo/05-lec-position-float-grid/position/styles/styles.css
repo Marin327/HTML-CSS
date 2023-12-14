@@ -1,0 +1,47 @@
+.static .tags {
+  /* purple */
+  position: static;
+  top: 20px;
+  left: 20px;
+  background-color: grey;
+}
+
+.relative .tags {
+  /* pink */
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: grey;
+}
+
+.absolute{
+  position: relative;
+}
+
+.absolute .tags {
+  /* salmon */
+  position: absolute;
+  top: 320px;
+  right: 20px;
+  background-color: grey;
+}
+
+/* .fixed .tags {
+  green
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: grey;
+  width: 100%;
+} */
+
+.sticky .tags {
+  /* salmon */
+  position: sticky;
+  top: 120px;
+  bottom: 120px;
+  right: 20px;
+  background-color: grey;
+}
+
+

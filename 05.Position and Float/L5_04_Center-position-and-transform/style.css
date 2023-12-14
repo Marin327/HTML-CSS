@@ -1,0 +1,56 @@
+:root {
+  --boby-background-color: ;
+  --card-background-color: rgb(255, 255, 255);
+  --button-background-color: rgb(0, 153, 0);
+}
+
+body {
+  display: block;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(238, 238, 238);
+  font-family: Georgia, serif;
+  font-size: 1em;
+}
+
+.card {
+  display: block;
+  position: absolute;
+  background-color: var(--card-background-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+}
+
+div {
+  position: relative;
+}
+
+div.content {
+  position: relative;
+  padding: 20px 30px;
+  height: 150px;
+}
+
+div.content a {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background-color: var(--button-background-color);
+  padding: 6px 12px;
+  border-radius: 3px;
+  right: 20px;
+  bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0;
+}

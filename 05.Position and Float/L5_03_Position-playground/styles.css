@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+.viewport{
+    display: block;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+
+.card{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+}
+
+.card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+i{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+div.viewport:nth-child(1) {
+    background: rgb(24, 91, 157);
+    background: linear-gradient(90deg, rgba(24, 91, 157, 1) 0%, rgba(66, 203, 161, 1) 100%);
+}
+
+div.viewport:nth-child(2) {
+    background: rgb(168,50,120);
+background: linear-gradient(90deg, rgba(168,50,120,1) 0%, rgba(210,130,19,1) 100%);
+}
