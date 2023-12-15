@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body,
+ul,
+li{
+    display:flex;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    justify-content: center;
+}
+
+.gallery ul{
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    gap:30px;
+}
+
+.gallery ul li{
+    width:30%;
+    height: 30vh;
+    border: 8px solid black;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 14px 15px rgba(0,0,0,0.1);
+}
+
+.gallery ul li img{
+    max-width:80%;
+    max-height:80%;
+    
+    object-fit: contain;
+}

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1em/1.2;
+}
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page .page__header{
+  flex-basis: 100%;
+}
+
+a {
+  color: rgb(0, 153, 0);
+  text-decoration: none;
+}
+
+.page__header {
+  border-bottom: 3px solid black;
+}
+
+header p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+header nav,
+header nav ul li {
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+.img, 
+img{
+  background-color: rgb(255, 255, 255);}
+  .img {
+  box-shadow: 10px 10px 37px 8px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.img__left {
+  float: left;
+}
+
+.img__right {
+  float: right;
+}
+
+.quote__right {
+  padding: 0;
+  border-left: 3px solid lightgrey;
+  display: block;
+  width: 50vw;
+  float: right;
+  margin-left: 30px;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  margin-top: 0px;
+  position: relative;
+}
+
+.author {
+  margin-top: 20px;
+  float: right;
+}
+
+main {
+  width: 70%;
+  display: inline-block;
+}
+
+aside {
+  vertical-align: top;
+  width: 28%;
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+:root{
+ --border-default : 1px solid lightgrey;
+}
+article{
+    background-color: #fff;
+    border: var(--border-default);
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 30%;
+}
+
+article img{
+    width: 100%;
+    object-fit: contain;
+}
+
+article section h3,
+article section p,
+article section footer{
+    padding: 0 1rem;
+}
+
+article section footer{
+    padding: 1rem;
+}
+
+article footer{
+    border-top: var(--border-default);
+}
