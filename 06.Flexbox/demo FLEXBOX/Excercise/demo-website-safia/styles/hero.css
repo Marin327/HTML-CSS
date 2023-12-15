@@ -1,0 +1,46 @@
+#hero {
+  padding: 64px 0;
+}
+
+#hero .info {
+  width: calc(100% - 2 * var(--page-px-main));
+  margin: 0 auto;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+
+#hero .info .info__title{
+    font-size: 64px;
+    line-height: 80px;
+    width: 50%;
+
+}
+
+#hero .info .info__wrapper{
+    width: 35%;
+}
+
+
+#hero .info .info__desc{
+    color: var(--clr-neutral-500);
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+
+#hero .hero__img{
+    margin: 0 var(--page-px-mini);
+    margin-bottom: 64px;
+}
+
+#hero .companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 96px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}

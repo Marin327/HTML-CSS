@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dadbdf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul.container {
+    margin: 3rem;
+}
+
+.container .item {
+    --bg-clr: #845ec2;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--bg-clr);
+}
+
+
+.item:nth-child(1) {
+    --bg-clr: #4bbc7c;
+}
+
+.item:nth-child(2) {
+    --bg-clr: #8dcb74;
+}
+
+.item:nth-child(3) {
+    --bg-clr: #cbd775;
+}
+
+.item:nth-child(4) {
+    --bg-clr: #fae282;
+}
+
+.item:nth-child(5) {
+    --bg-clr: #00bedb;
+}
+
+.item:nth-child(6) {
+    --bg-clr: #ed9322;
+}
+
+.item:nth-child(7) {
+    --bg-clr: #ff7363;
+}
