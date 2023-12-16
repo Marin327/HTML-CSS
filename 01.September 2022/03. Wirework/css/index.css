@@ -1,0 +1,26 @@
+@import url(reset.css);
+@import url(main.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root{
+    --clr-danger: #d85032;
+    --clr-success: #389671;
+    --clr-neutral:#383838;
+    --clr-neutral-light:#ececec;
+
+    --clr-danger-text: #f1c7bd;
+    --clr-danger-text-light: #f8e7df;
+    --clr-success-text:#61b196 ;
+    --clr-success-text-light:#99cdbb ;
+    --clr-neutral-text:#686868;
+
+    --clr-white: #fff;
+    --clr-black:#000;
+
+    --header-height:66px;
+}
+
+html{
+    font-family: Helvetica, sans-serif;
+    color: var(--clr-neutral-text);
+}

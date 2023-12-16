@@ -1,0 +1,216 @@
+/* Navigation */
+.header {
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 2rem 3rem;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.header .logo .main {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1;
+}
+
+.main{
+    color: var(--clr-black);
+}
+
+.header .logo .divider {
+  display: inline-block;
+  width: 1px;
+  height: 46px;
+  background-color: var(--clr-neutral);
+}
+
+.header .logo .sub {
+  font-size: 21;
+  line-height: 1;
+  align-self: end;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.header .nav .nav__item {
+  padding: 1rem 2rem;
+  background-color: var(--clr-neutral-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .nav .nav__item.active {
+  background-color: var(--clr-danger);
+  color: white;
+}
+
+.header .nav .nav__item .nav__link {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 1.1px;
+}
+
+/* Hero */
+
+#hero {
+  height: calc(100vh - var(--header-height));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero .img__container {
+  overflow: hidden;
+}
+
+#hero .img__container .hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .content {
+  padding: 4rem 6rem;
+  background-color: var(--clr-danger);
+  color: var(--clr-danger-text);
+}
+
+#hero .content .text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#hero .content .text .link {
+  color: var(--clr-danger-text-light);
+}
+
+#features, #advantages {
+  background-color: var(--clr-neutral);
+  color: var(--clr-neutral-text);
+  padding: 7rem;
+}
+
+section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  gap:2rem;
+}
+
+section .grid .grid__item .icon__container {
+  background-color: var(--clr-danger);
+  color: white;
+  padding: 1.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+section .grid .grid__item .icon__container i {
+  font-size: 4rem;
+}
+
+section .grid .grid__item .title {
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+section .grid .grid__item .divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-neutral-text);
+  margin-bottom: 1rem;
+}
+
+section .grid .grid__item .desc{
+    font-size: 1.2rem;
+}
+
+section .grid .grid__item.active .icon__container i{
+    font-size: 4.5rem;
+}
+
+section .grid .grid__item.active .icon__container ,
+section .grid .grid__item.active .title,
+section .grid .grid__item.active .divider {
+  margin-bottom: 1.5rem;
+}
+
+#advantages h2{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#form{
+    padding: 6rem;
+    text-align: center;
+    color: var(--clr-neutral-text);
+}
+
+#form .title{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+#form .sub__title{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#form .bth__success{
+    border: none;
+    background-color: var(--clr-success);
+    color:var(--clr-white);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+footer{
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-success);
+    color: var(--clr-success-text);
+    
+}
+
+footer .resources{
+    display: flex;
+}
+
+footer .resources .resource{
+    letter-spacing: 2px;
+    padding: 0px 10px;
+}
+
+footer .resources .resource:not(:last-of-type){
+    border-right: 2px solid var(--clr-success-text);
+}
+
+footer .resources .resource .link{
+    text-decoration: none;
+    color: var(--clr-success-text-light);
+}
+
+
