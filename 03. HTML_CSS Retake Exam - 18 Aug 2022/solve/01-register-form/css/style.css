@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+@import url(reset.css);
+
+:root {
+  --clr-text-grey: #8b8c8b;
+  --clr-checkbox: #ebebeb;
+  --clr-text-dark: #3b3348;
+  --clr-red: #ae3c33;
+  --clr-white: #fff;
+
+  --pad-section: 10rem;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  background-image: url("../images/form-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  margin-inline: auto;
+  padding: 6rem 4rem 4rem 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  -webkit-box-shadow: 14px 14px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 14px 14px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 14px 14px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+.container {
+  width: 60%;
+  height: calc(100% - 4rem);
+}
+
+.title {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-control .form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control .form__input {
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid var(--clr-text-grey);
+  height: 2.5rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.accept {
+  background-color: var(--clr-checkbox);
+}
+
+.accept,
+.accept__text {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  display: block;
+  margin-inline: auto;
+}
