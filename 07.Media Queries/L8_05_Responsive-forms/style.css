@@ -1,0 +1,69 @@
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+
+section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend {
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 5px 50px 5px 5px;
+}
+
+.form .form__fields {
+  background-color: #f8f8f8;
+  padding: 10px 10px;
+}
+
+.form .form__fields .form__field {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.form .form__fields .form__field .input {
+  width: 95%;
+}
+
+.form .form__field .icon {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 50%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 300px;
+  }
+
+  .form .form__fields .form__field {
+    display: flex;
+    gap: 10px;
+  }
+
+  .form .form__fields .form__field .input {
+    margin-left: -25px;
+  }
+
+  .form .form__fields .form__field label {
+    flex-basis: 20%;
+  }
+
+  .form .form__field .icon {
+    padding-top: 5px;
+    padding-left: 5px;
+    position: unset;
+    z-index: 1;
+  }
+}

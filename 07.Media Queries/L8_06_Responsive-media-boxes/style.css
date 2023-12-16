@@ -1,0 +1,56 @@
+:root {
+  --card-bg-color: rgb(255, 255, 255);
+  --btn-bg-color: rgb(0, 153, 0);
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  padding: 80px;
+}
+
+section {
+  background-color: var(--card-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, serif;
+  font-size: 1em/1.2;
+}
+
+section {
+  max-width: 400px;
+}
+
+.img__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img__container img {
+  object-fit: cover;
+}
+
+.content__container {
+  padding: 0px 20px 20px;
+}
+
+.content__container .content__btn__container {
+  display: flex;
+  justify-content: end;
+}
+
+.content__container .content__btn {
+  background-color: var(--btn-bg-color);
+  color: white;
+  border: none;
+  border-radius: 0.2em;
+  padding: 12px 24px;
+}

@@ -1,0 +1,17 @@
+.btn {
+        border: 1px solid black;
+        border-radius: 0.2rem;
+        padding: 6px 14px;
+        background-color: #fff;
+        font-size: 12px;
+        display: block;
+        cursor: pointer;
+  }
+  
+  .btn-menu {
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aliceblue;
+  }
