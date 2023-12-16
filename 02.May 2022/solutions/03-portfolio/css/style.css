@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,600&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+@import url(reset.css);
+:root {
+  --clr-grey-ligt: #efefef;
+  --clr-dark: #222222;
+  --clr-sub: #4c4c4c;
+  --clr-social: #909090;
+  --clr-white: #fff;
+
+  --pad-section: 5rem;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--clr-dark);
+}
+
+/* ---------------------------- */
+/*          Utilities           */
+/* ---------------------------- */
+.section {
+  display: flex;
+  background-color: var(--clr-grey-ligt);
+  height: 70vh;
+  padding: var(--pad-section);
+
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.section-item--wide {
+  width: 55%;
+}
+
+.section-item--narrom {
+  width: calc (45% - 6rem);
+}
+
+.default-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.accent {
+  font-weight: bold;
+}
+
+.divider {
+  background-color: var(--clr-dark);
+}
+
+.divider--vertical {
+  width: 1px;
+  height: 5rem;
+}
+
+.divider--horisontal {
+  width: 5rem;
+  height: 1px;
+}
+
+.default-desc {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Header */
+#header {
+    background-color: var(--clr-grey-ligt);
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+#header button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#header button .btn__icon{
+    font-size: 2rem;
+}
+
+/* Hero */
+#hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#hero .info {
+  width: 45%;
+}
+
+#hero .info__desc {
+  margin-bottom: 2rem;
+}
+
+#hero .hero__img {
+  position: absolute;
+  bottom: 0px;
+  right: var(--pad-section);
+  width: 45%;
+}
+
+/* Purpose */
+
+#purpose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#purpose .title__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* #purpose .info{
+    width: 50%;
+} */
+
+#purpose .purpose__img {
+  width: 30%;
+  /* margin-right: 6rem; */
+  margin-left: 4rem;
+}
+
+#purpose .title__wrapper .default-title {
+  margin-bottom: unset;
+  margin-left: 2.5rem;
+}
+
+#purpose .default-desc {
+  margin-bottom: 2rem;
+}
+
+#purpose .socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#purpose .socials .social__link {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--clr-white);
+  background-color: var(--clr-social);
+  text-decoration: none;
+}
+
+/* Image */
+#image {
+  padding: 0px;
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* enim */
+
+#enim .enim__img {
+  width: 85%;
+  margin-left: auto;
+}
+
+#enim .info {
+  padding-left: 2rem;
+}
+
+#enim .default-desc {
+  margin-bottom: 2rem;
+}
+
+/* Gallery */
+#gallery img {
+  width: 33.33%;
+  position: relative;
+  z-index: 1;
+}
+
+#gallery img:nth-child(2) {
+  transform: scale(1.5);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Contacts */
+#contacts{
+    margin-bottom: 0 ;
+}
+
+#contacts .contacts_content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contacts .default-desc {
+  margin-bottom: 2rem;
+}
+
+#contacts .form {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "email subject"
+    "message message"
+    "btn btn";
+}
+
+.form-control{
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background-color: transparent;
+}
+
+.email {
+  grid-area: email;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.message {
+  grid-area: message;
+
+}
+
+.submit {
+  grid-area: btn;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+/* footer */
+.footer{
+    background-color: var(--clr-grey-ligt);
+    text-align: center;
+    font-size: 1.5rem;;
+    font-style: italic;
+    padding-bottom: 1rem;
+}

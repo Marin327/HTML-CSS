@@ -1,0 +1,117 @@
+/* TODO: Add responsive styles here... */
+@media screen and (max-width: 600px) {
+  :root {
+    --margin-bottom: 4rem;
+  }
+  .navbar-light {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-light .navbar-brand {
+    padding: 0px;
+    margin: 0 auto;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container h1 {
+    margin-top: var(--margin-bottom);
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  .container h1,
+  .container h2,
+  .container h3,
+  .container h4,
+  .container h5,
+  .container p {
+    text-align: center;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--margin-bottom);
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .col-sm-6,
+  .col-lg-6 {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .service-box h3,
+  .service-box p {
+    text-align: left;
+  }
+
+  .service-box p {
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+
+  h5 {
+    margin-top: var(--margin-bottom);
+  }
+
+  .about {
+    margin-bottom: var(--margin-bottom);
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  #contact-us .container,
+  #contact-us .container .row {
+    width: 100%;
+  }
+
+  #contact-us .hero-btns {
+    display: none;
+  }
+
+  .contact .row {
+    gap: 0.5rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .contact-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer h3 {
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+  }
+
+  footer h6 {
+    padding-bottom: 0px;
+  }
+}
