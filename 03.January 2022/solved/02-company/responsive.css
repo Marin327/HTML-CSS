@@ -1,0 +1,75 @@
+@media screen and (max-width:600px) {
+    section{
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .col h3{
+        font-size: 4rem;
+    }
+
+    .wrapper{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-head{
+        background-image: none;
+        background-color: black;
+        padding-bottom: 7rem;
+    }
+
+    .main-nav{
+        display: none;
+        background-color: black;
+    }
+
+    .hero-head h1{
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    .hero-head .goal{
+        float: unset;
+        max-width: 100%;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .content-wrap.two-col {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .content-wrap.two-col .col{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .module-text{
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .content-wrap.two-col .col .button{
+        width: 100%;
+    }
+
+    .main-foot .wrapper{
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .main-foot .bottom .copyright {
+        float: unset;
+        font-size: 1.2rem;
+    }
+
+    .main-foot h4{
+        font-size: 2rem;
+    }
+
+    .main-foot address, .main-foot nav{
+        font-size: 1rem;
+    }
+}

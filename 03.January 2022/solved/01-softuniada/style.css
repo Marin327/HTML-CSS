@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+:root {
+  --clr-orange: #ffa200;
+  --clr-grey: #989797;
+  --clr-grey-light: #eeeeee;
+  --clr-white: #fff;
+  --clr-black: #353842;
+}
+
+
+body{
+    padding: 2em 6em;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--clr-black);
+    margin-bottom: 2rem;
+}
+
+.wrapper{
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.header{
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.header time{
+    margin-left: 1rem;
+}
+
+.article{
+    padding: 3rem 3rem 4rem 3rem;
+}
+
+.article:last-of-type{
+    padding-bottom: 7rem ;
+}
+
+.article:not(:last-child){
+    border-bottom:2px solid var(--clr-grey-light);
+}
+
+.article time{
+    color: gray;
+}
+
+.article .info{
+    font-size: 1.4rem;;
+    line-height: 2rem;
+} 
+
