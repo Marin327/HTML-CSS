@@ -1,0 +1,53 @@
+@media screen and (max-width:800px) {
+    nav,nav ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+
+    header div{
+        background-image: url('../image/dancing-girl.png');
+    }
+
+    .trainings {
+        flex-direction: column;
+    }
+
+    .trainings div{
+        width: 50%;
+    }
+
+    .instructors-pic, .getInTouch {
+        flex-direction: column;
+    }
+
+    .getInTouch div{
+        width: 50%;
+    }
+    .getInTouch div.map{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .getInTouch form input,
+    .getInTouch form textarea{
+        width: 100%;
+    }
+
+    .site-footer{
+        padding: 2rem 6rem;
+    }
+
+    .site-footer .wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .wrapper .about{
+        flex-basis: 100%;
+    }
+}
