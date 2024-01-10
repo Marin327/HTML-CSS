@@ -1,0 +1,66 @@
+@media screen and (max-width:600px) {
+    body{
+        margin: 0px;
+        display: unset;
+    }
+
+    main{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 2.5rem;
+    }
+
+    p{font-size: 1.2rem;}
+
+    .left-to-right:first-child {
+        padding:2.5rem;
+        height:600px
+    }
+
+    main .left-to-right article {
+        border-radius: 5rem;
+        padding: 2rem;
+        margin-inline: auto;
+        width: 425px;
+        height: auto;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    .left-to-right button,
+    main section:nth-child(2) button{
+        display: none;
+    }
+
+    main section:nth-child(2){
+        flex-direction: column;
+    }
+
+    main section:nth-child(4) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+    }
+
+    main section:nth-child(4) article{
+        margin-left: 0;
+    }
+
+    form{
+        width: 60vw;
+    }
+    }
+    section form label input, section form textarea{
+        width: 100%;
+    }
+
+    #send{
+        display: block;
+        margin-inline: auto;
+    }
