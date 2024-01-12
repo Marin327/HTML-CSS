@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+@import url(reset.css);
+
+:root {
+  --clr-green: #03a87c;
+  --clr-green-light: #cefde9;
+  --clr-grey: #757575;
+  --clr-greyline: #8b8b8b;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --background-image:  url("../image/image1.png");
+  --box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.64);
+}
+
+body {
+  font-family: 'Helvetica', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: Georgia, serif;
+}
+
+section{
+  max-width: 1440px;
+  margin-inline: auto;
+  margin-top: 5rem;
+  padding-inline: 10rem;
+}
+
+.title{
+  font-size: 4rem;
+}
+
+p{
+  font-size: 1.35rem;
+  color: var(--clr-grey);
+}
+
+.standing{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-black);
+  margin-bottom: 2rem;
+}
+
+header
+{
+  margin-bottom: 3rem;
+}
+
+main{
+  display: flex;
+  margin-bottom: 4rem;
+
+}
+
+.panel{
+  flex-basis: 50%;
+}
+
+.left{
+  display: inherit;
+}
+
+.right{
+  padding-right: 2rem;
+}
+
+.btn{
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  padding: 0.5rem 3.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  align-self: end;
+}
+
+.accent{
+  background-color: var(--clr-green-light);
+}
+
+.separator{
+  width:30%;
+  height: 1px;
+  background-color: var(--clr-greyline);
+  margin-inline: auto ;
+}
+
+

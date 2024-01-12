@@ -1,0 +1,70 @@
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .banner,
+  .wrapper {
+    padding: 2rem 1rem;
+    max-width: 100%;
+  }
+
+  .banner h2 {
+    border-style: double solid;
+    border-width: 4px 1px;
+    font-size: 2em;
+    line-height: 1.35em;
+    padding: 1.1em;
+    position: relative;
+    width: 100%;
+  }
+
+  .banner p {
+    margin-bottom: 2rem;
+  }
+
+  .banner .actions {
+    margin-bottom: 1rem;
+  }
+  
+  .banner .button.special {
+    display: block;
+    width: 100%;
+  }
+
+  .wrapper > .inner,
+  .wrapper > .inner h2 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  header.major {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .grid-form {
+    margin-bottom: 0;
+  }
+
+  .wrapper > .inner.narrow,
+  ul.actions li:last-child {
+    width: 100%;
+  }
+
+  .footer:before {
+    left: 2rem;
+    width: calc(100% - 4rem);
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
