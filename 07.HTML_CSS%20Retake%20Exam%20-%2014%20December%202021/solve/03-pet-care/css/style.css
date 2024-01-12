@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+@import url(reset.css);
+
+:root {
+  --clr-red: #ff3300;
+  --clr-grey: #666666;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --bg-primary: linear-gradient(
+    90deg,
+    rgba(241, 67, 51, 1) 0%,
+    rgba(238, 90, 9, 1) 100%
+  );
+  --background-image: url("../image/image1.png");
+  --box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.64);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  padding: 2rem 15rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:sticky;
+  top: 0;
+  z-index:1;
+  background-color: var(--clr-white);
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.main-nav__link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.btn {
+  background-color: var(--clr-white);
+  color: var(--clr-red);
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.75rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background: var(--bg-primary);
+  color: var(--clr-white);
+}
+
+
+/* Hero */
+#hero {
+  background-image: url("../images/header-bg.png");
+  height: calc(100vh - 10rem);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+#hero .left {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#hero .left .title {
+  font-size: 6rem;
+  line-height: 4rem;
+  font-weight: 200;
+}
+
+#hero .left .sub-title {
+  font-size: 6rem;
+  /* font-weight: 200; */
+}
+
+#hero .left .desc {
+  font-size: 1.25rem;
+  padding-right: 6rem;
+  margin-bottom: 2rem;
+}
+
+#hero img {
+  width: 55%;
+  position: absolute;
+  bottom: -100px;
+  left: 30%;
+}
+
+/* Services */
+#services {
+  padding-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+#services .title,
+#services .sub-title {
+  text-align: center;
+}
+
+#services .title {
+  font-size: 3rem;
+}
+
+#services .sub-title {
+  padding-inline: 25rem;
+  margin-bottom: 6rem;
+}
+
+#services .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#services article {
+  display: flex;
+  border: 1px solid red;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  gap: 2rem;
+}
+
+#services article:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#services .art_title {
+  font-size: 2rem;
+}
+
+#services .art_desc {
+  font-size: 1.5rem;
+}
+
+.service-icon {
+  width: 60%;
+  padding: 2rem;
+  background-image: url("../images/service-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-icon .service_img {
+  margin: auto;
+}
+
+/* about */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+#about .title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+#about .sub-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+#about .desc {
+  font-size: 1.25rem;
+}
+
+#about .desc:last-of-type {
+  margin-bottom: 3rem;
+}
+
+/* Contact */
+#contacts{
+  background-image: url("../images/cats-bg.png");
+  height:70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+}
+
+#contacts .title{
+  font-size: 3rem;
+}
+
+#contacts .desc{
+  padding-inline: 18rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#contacts .nav-wrapper a{
+  text-decoration: none;
+  color: var(--clr-white);
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+#contacts .nav-wrapper a strong{
+  margin-left: 1rem;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 4rem;
+}
+
+footer article h2,
+footer article img{
+  margin-bottom: 2rem;
+}
+
+footer article p:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+

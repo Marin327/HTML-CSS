@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+@import url(reset.css);
+
+:root {
+  --clr-green: #a4c639;
+  --clr-grey: #f7f7f7;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --background-image:  url("../image/image1.png");
+  --box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.64);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section{
+  width: 1440px;
+  margin-inline:auto;
+  padding: 5rem;
+}
+
+header{
+  text-align: center;
+}
+
+.title{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.accent{
+  color: var(--clr-green);
+}
+
+.sub-title{
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  gap:2rem;
+}
+
+.card{
+  background-color: var(--clr-grey);
+}
+
+.card .img{
+  width:100%;
+}
+
+.card .content{
+  padding:2rem;
+}
+
+.card .card_title{
+  margin-bottom: 1rem;
+}
+
+.card .desc{
+  margin-bottom: 1rem;
+}
+
+.btn{
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+
+
